@@ -1,0 +1,71 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>E_Tickets</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Actors\Details.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Actors\Details.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Actors\Details.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Actors\Details.cshtml" />
+    <None Include="Views\Cinemas\Create.cshtml" />
+    <None Include="Views\Cinemas\Delete.cshtml" />
+    <None Include="Views\Cinemas\Details.cshtml" />
+    <None Include="Views\Cinemas\Edit.cshtml" />
+    <None Include="Views\Cinemas\Index.cshtml" />
+    <None Include="Views\Movies\Create.cshtml" />
+    <None Include="Views\Movies\Details.cshtml" />
+    <None Include="Views\Movies\Edit.cshtml" />
+    <None Include="Views\Movies\Index.cshtml" />
+    <None Include="Views\Orders\Index.cshtml" />
+    <None Include="Views\Orders\OrderCompleted.cshtml" />
+    <None Include="Views\Orders\ShoppingCart.cshtml" />
+    <None Include="Views\Producers\Create.cshtml" />
+    <None Include="Views\Producers\Delete.cshtml" />
+    <None Include="Views\Producers\Details.cshtml" />
+    <None Include="Views\Producers\Edit.cshtml" />
+    <None Include="Views\Producers\Index.cshtml" />
+    <None Include="Views\Shared\Components\ShoppingCartSummary\Default.cshtml" />
+    <None Include="Views\Shared\Error.cshtml" />
+    <None Include="Views\Shared\NotFound.cshtml" />
+    <None Include="Views\Shared\_CreateItem.cshtml" />
+    <None Include="Views\Shared\_Identity.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Services\User\" />
+    <Folder Include="Data\ViewModels\Actor\" />
+  </ItemGroup>
+
+</Project>
